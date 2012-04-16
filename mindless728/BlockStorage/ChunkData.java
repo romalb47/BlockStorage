@@ -1,5 +1,7 @@
 package mindless728.BlockStorage;
 
+import org.bukkit.Bukkit;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -10,7 +12,7 @@ public class ChunkData {
 	private boolean dirty;
 	
 	public ChunkData() {
-		data = new Serializable[16][16][128];
+		data = new Serializable[16][16][256];
 		dirty = false;
 	}
 	
